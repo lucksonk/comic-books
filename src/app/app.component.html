@@ -1,5 +1,5 @@
 <h2>My Heroes</h2>
 <ul>
-    <li *ngFor="let item of data?.data.results">{{item.title}}
+    <li *ngFor="let hero of heroes">{{hero.description}} <br> {{hero.name}} <br> <img src="{{hero.image}}">
   </li>
 </ul>
