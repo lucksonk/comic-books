@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
          if (temp) {
             temp.data.results.forEach(element => {
-              if (element.description) {
+
                    this.heroes.push({
                        id: element.id,
                        name: element.name,
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
                        image: element.thumbnail.path + '.' + element.thumbnail.extension,
                        details_url: element.urls[0].url
                     });
-                  }
+
             });
          }
 
