@@ -23,4 +23,9 @@ export class ComicApiService {
     return this.http.get(url);
   }
 
+  getHero(id: number) {
+    let url = 'https://gateway.marvel.com/v1/public/comics/'+id +'?ts='+TimeStamp+'&apikey='+PublicKey+'&hash='+hash;
+    console.log('url ' +url);
+    return this.http.get(url);
+  }
 }
